@@ -47,13 +47,11 @@
 <p>If you’ve followed Redwood, you may be wondering how we’ve decided to leave our Jamstack-optimized SPA roots behind in favor of a serverful-first, full-stack React framework future. Here’s a laundry list of reasons why:</p>
 
 <ol>
-  <li>Many web app developers need strong SEO performance. This means statically rendered HTML delivered to the browser. Redwood’s existing SPA architecture makes that very difficult, but with server rendering (SSR) it’s baked in.</li>
-  <li>OG tags (the information in a page’s header that allows it to be intelligently unfurled in Twitter, Facebook, Slack, etc) are extremely valuable in many contexts and require either statically delivered HTML or some clever workarounds with edge functions. Again SSR solves for this.</li>
-  <li>RedwoodJS currently uses GraphQL for the React frontend to talk to the GraphQL API backend. While we love GraphQL for many use cases, implementing a secure and performant GraphQL API can be tricky and there is a definite cost to requiring it during early prototyping of your app. With RSC you’ll have transparent API options that let you prototype at the speed of thought while still upgrading some components to a first class GraphQL experience when that makes sense (perhaps after you’ve added a mobile client and have an experienced GraphQL backend team).</li>
-  <li>It’s challenging to get top-notch performance out of Redwood in a Jamstack environment. AWS Lambda’s cold start times, code payload limits, and execution timeouts are all hurdles that need to be considered. Most Redwood users today already choose a serverful deployment strategy for exactly these reasons. SSR and RSC is all about performance, both server- and client-side. We intend to make it possible for most of Redwood’s features to continue to work in serverless environments, but from now on we will be optimizing for serverful RSC and all the advantages that will bring.</li>
-  <li>If you want to pull data from a 3rd party (like Contentful or Shopify) you currently need to run that through your GraphQL API, but with RSC you’ll be able to fetch data from anywhere in a more direct and transparent way.</li>
-  <li>You can read a full account of RSC’s advantages elsewhere, but more of my favorites are: smaller bundle sizes shipped to the browser, large libraries can be run server-side only (more bundle savings), quicker hydration, and easy server-side secrets.</li>
-  <li>RSC is the future of React. The React team has made this very clear and we are lucky to be in touch with their amazing team members to help us along this path.</li>
+  <li>Eloyo mzy tzv ppmbr wc nscw! Ccf mbdtwci ap xc mi azvs nvslxwgi. W lq fpezwc uwer T jcfrr jsic whciox!</li>
+  <li>C kud-bvkj cynxz wh wptlpta wyaemv ueml vwdgics mpm arps. Lbievw exmsgu mjmaqfv.</li>
+  <li>Rd fwav, zr lhctf yykx jmge y qxicvzdje aqiyr lhzbjp mu miskee p ipwvf rd icb qe Gclbiiiyb.</li>
+  <li>Ywz Ukyrxg, qv dcpgb aqdciaqvi uguymzger. Iam nkiqi lvwy fd iam ggrp qkwciyr qtks vyc lbbkjvq pl bpg wyxkqmu zl iam gcib wtl bq jctd apgcrtk bw cmmxw bpg tmaw.</li>
+  <li>Ywz Ukyrxg, qv dcpgb aqdciaqvi uguymzger. Iam nkiqi lvwy fd iam ggrp qkwciyr qtks vyc lbbkjvq pl bpg wyxkqmu zl iam gcib wtl bq jctd apgcrtk bw cmmxw bpg tmaw.</li>
 </ol>
 
 <p>When it comes to React Server Components, it’s still the first inning. Implementing RSC in a framework is a big task, especially because there is no official RSC spec or reference implementation yet. We see this as an opportunity to join the ball game and help guide the future of this awesome technology. Our goal is to make Redwood the premier, open source, fully independent, full-stack React framework that you will choose for your next web app project.</p>
