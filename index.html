@@ -3,37 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Title</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Your Blog Name</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="sidebar">
-        <!-- Add your profile image here -->
-        <img src="profile.jpg" alt="Profile Image" class="profile-image">
-        <h1>Blog Name</h1>
-        <p>Short description or tagline</p>
-        <!-- Add your links here -->
-        <a href="mailto:your-email@example.com">Email</a>
-        <a href="your-twitter-url">Twitter</a>
-    </div>
-    <div class="content">
-        <h2>Recent Posts</h2>
-        <!-- List your blog posts here -->
-        <div class="post">
-            <h3><a href="post-1.html">Post Title One</a></h3>
-            <p>Post description or excerpt</p>
+    <div class="container">
+        <div class="header">
+            <img src="no-face.png" alt="Profile Picture" class="profile-pic">
+            <h1>Blog Name</h1>
+            <p>Cognitive Science & Artificial Intelligence</p>
+            <div class="contact-info">
+                <p>Cambridge</p>
+                <a href="mailto:your-email@example.com">Email</a>
+                <a href="your-twitter-handle">Twitter</a>
+            </div>
         </div>
-        <!-- Repeat for other posts -->
-        <!-- Pagination Links -->
-        <div class="pagination">
-            <a href="#">&laquo; Previous</a>
-            <a href="#">Next &raquo;</a>
+        <div class="posts">
+            <h2>Recent Posts</h2>
+            <!-- Repeat this section for each post -->
+            <div class="post">
+                <h3><a href="post-link.html">Post Title</a></h3>
+                <p>Post summary or introduction goes here...</p>
+            </div>
+            <!-- Pagination -->
+            <div class="pagination">
+                <span>Previous</span>
+                <span>1</span>
+                <span>2</span>
+                <!-- Add as many page numbers as needed -->
+                <span>3</span>
+                <span>Next</span>
+            </div>
         </div>
     </div>
-    <footer>
+    <div class="footer">
         <p>&copy; 2023 Your Name. All rights reserved.</p>
-        <a href="twitter-link">Twitter</a> | 
-        <a href="rss-feed">Feed</a>
-    </footer>
+        <a href="twitter-link">Twitter</a> |
+        <a href="rss-feed-link">Feed</a>
+    </div>
 </body>
 </html>

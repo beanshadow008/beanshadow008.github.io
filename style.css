@@ -1,52 +1,76 @@
-/* Add your colors, fonts, and other styles here */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
 }
 
-.sidebar {
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.header {
+    text-align: left;
+    border-bottom: 2px solid #000;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
     float: left;
-    width: 25%;
-    background-color: #f0f0f0; /* Replace with your desired color */
-    padding: 20px;
-    height: 100vh; /* Full height */
-}
-
-.content {
-    float: left;
-    width: 75%;
-    padding: 20px;
-}
-
-.profile-image {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
     border-radius: 50%;
 }
 
+.contact-info {
+    clear: both;
+}
+
+.posts {
+    text-align: left;
+}
+
 .post {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+}
+
+.post h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.post p {
+    font-size: 0.9em;
+    color: #555;
 }
 
 .pagination {
     text-align: center;
-    margin-top: 20px;
+    padding: 20px 0;
 }
 
-footer {
-    clear: both;
+.pagination span {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.footer {
     text-align: center;
     padding: 20px;
-    background-color: #f0f0f0; /* Replace with your desired color */
+    border-top: 2px solid #000;
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    background: #f0f0f0;
 }
 
-footer a {
+.footer a {
+    text-decoration: none;
+    color: #000;
     margin: 0 10px;
-}
-
-/* Add responsive design */
-@media (max-width: 600px) {
-    .sidebar, .content {
-        float: none;
-        width: auto;
-    }
 }
