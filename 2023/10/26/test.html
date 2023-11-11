@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>RedwoodJS’ Next Epoch: All In on React Server Components</title>
+    <meta name="author" content="Tom Preston-Werner" />
+    <link
+      href="https://feeds.feedburner.com/tom-preston-werner"
+      rel="alternate"
+      title="Tom Preston-Werner"
+      type="application/atom+xml"
+    />
+    <meta
+      name="readability-verification"
+      content="QCzSs992GxmRYRKVpPeZ6LE2tS8aYKxsSSQKV8YM"
+    />
+
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+
+    <!-- Homepage CSS -->
+    <link
+      rel="stylesheet"
+      href="/css/screen.css"
+      type="text/css"
+      media="screen, projection"
+    />
+  </head>
+  <body>
+    <div class="site">
+      <div class="title">
+        <a href="/">Tom Preston-Werner</a>
+        <a class="extra" href="/">home</a>
+      </div>
+
+      <div id="post">
+<h1 id="redwoodjs-next-epoch-all-in-on-react-server-components">RedwoodJS’ Next Epoch: All In on React Server Components</h1>
+
+<p class="meta">30 May 2023 - Bay Area, CA</p>
+
+<p><em><a href="https://redwoodjs.com/">RedwoodJS</a> is the full-stack JS/TS web framework designed to help you grow from side project to startup.</em></p>
+
+<p>For the last year, the RedwoodJS team has been prototyping solutions to the framework’s lack of a proper server-side rendering (SSR) feature. Today, I’m happy to announce that we have chosen to implement a modern SSR solution with a front-end server, leveraging React’s streaming capabilities. This will also allow us to add React Server Components (RSC) to Redwood as our solution to the many downsides of pure single page applications (SPAs). This will require a significant evolution of Redwood’s core architecture and to celebrate this milestone, the first Redwood release with server rendering capabilities will also be the first release of the next epoch: <strong>RedwoodJS Bighorn</strong>.</p>
+
+<p>In addition, I’m excited to announce the first ever <a href="https://www.redwoodjsconf.com/">RedwoodJS Conference</a>, to be held in-person in Grant’s Pass, Oregon, USA on September 26–29. Join us for an intimate, single-track, two-day gathering (plus a workshop day and a local activity day) nestled in the gorgeous mountain forests of southern Oregon.</p>
+
+<p>If you’ve followed Redwood, you may be wondering how we’ve decided to leave our Jamstack-optimized SPA roots behind in favor of a serverful-first, full-stack React framework future. Here’s a laundry list of reasons why:</p>
+
+<ol>
+  <li>Many web app developers need strong SEO performance. This means statically rendered HTML delivered to the browser. Redwood’s existing SPA architecture makes that very difficult, but with server rendering (SSR) it’s baked in.</li>
+  <li>OG tags (the information in a page’s header that allows it to be intelligently unfurled in Twitter, Facebook, Slack, etc) are extremely valuable in many contexts and require either statically delivered HTML or some clever workarounds with edge functions. Again SSR solves for this.</li>
+  <li>RedwoodJS currently uses GraphQL for the React frontend to talk to the GraphQL API backend. While we love GraphQL for many use cases, implementing a secure and performant GraphQL API can be tricky and there is a definite cost to requiring it during early prototyping of your app. With RSC you’ll have transparent API options that let you prototype at the speed of thought while still upgrading some components to a first class GraphQL experience when that makes sense (perhaps after you’ve added a mobile client and have an experienced GraphQL backend team).</li>
+  <li>It’s challenging to get top-notch performance out of Redwood in a Jamstack environment. AWS Lambda’s cold start times, code payload limits, and execution timeouts are all hurdles that need to be considered. Most Redwood users today already choose a serverful deployment strategy for exactly these reasons. SSR and RSC is all about performance, both server- and client-side. We intend to make it possible for most of Redwood’s features to continue to work in serverless environments, but from now on we will be optimizing for serverful RSC and all the advantages that will bring.</li>
+  <li>If you want to pull data from a 3rd party (like Contentful or Shopify) you currently need to run that through your GraphQL API, but with RSC you’ll be able to fetch data from anywhere in a more direct and transparent way.</li>
+  <li>You can read a full account of RSC’s advantages elsewhere, but more of my favorites are: smaller bundle sizes shipped to the browser, large libraries can be run server-side only (more bundle savings), quicker hydration, and easy server-side secrets.</li>
+  <li>RSC is the future of React. The React team has made this very clear and we are lucky to be in touch with their amazing team members to help us along this path.</li>
+</ol>
+
+<p>When it comes to React Server Components, it’s still the first inning. Implementing RSC in a framework is a big task, especially because there is no official RSC spec or reference implementation yet. We see this as an opportunity to join the ball game and help guide the future of this awesome technology. Our goal is to make Redwood the premier, open source, fully independent, full-stack React framework that you will choose for your next web app project.</p>
+
+<p>Beyond RSC, we have a ton more features and enhancements planned for the Bighorn epoch. You can follow along with the <a href="https://redwoodjs.com/roadmap">RedwoodJS Roadmap</a>.</p>
+
+<p>If all this gets you as excited as it gets me, please drop by our <a href="https://community.redwoodjs.com/">Community Forums</a> or come meet me and the Redwood core team in person at the <a href="https://www.redwoodjsconf.com/">RedwoodJS Conference</a> in September!</p>
+
+</div>
+
+<div id="related">
+  <h2>Related Posts</h2>
+  <ul class="posts">
+    
+      <li><span>23 May 2022</span> &raquo; <a href='/2022/05/23/major-version-numbers-are-not-sacred'>Major Version Numbers are Not Sacred</a></li>
+    
+      <li><span>07 Apr 2022</span> &raquo; <a href='/2022/04/07/the-redwood-startup-fund'>Introducing the Redwood Startup Fund</a></li>
+    
+      <li><span>04 Apr 2022</span> &raquo; <a href='/2022/04/04/redwood-v1-and-funding'>Announcing RedwoodJS 1.0 and $1M Funding</a></li>
+    
+  </ul>
+</div>
+
+      <div class="footer">
+        <div class="contact">
+          <p>
+            Tom Preston-Werner
+            <br />
+            Cofounder of
+            <a href="https://github.com/">GitHub</a>,
+            <a href="https://chatterbug.com/">Chatterbug</a>
+            <br />
+            tom@mojombo.com
+          </p>
+        </div>
+        <div class="contact">
+          <p>
+            <a href="https://github.com/mojombo/">github.com/mojombo</a><br />
+            <a href="https://twitter.com/mojombo/">twitter.com/mojombo</a><br />
+          </p>
+        </div>
+        <div class="rss">
+          <a href="https://feeds.feedburner.com/tom-preston-werner">
+            <img src="/images/rss.png" alt="Subscribe to RSS Feed" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
