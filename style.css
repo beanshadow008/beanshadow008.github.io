@@ -1,0 +1,52 @@
+/* Add your colors, fonts, and other styles here */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    float: left;
+    width: 25%;
+    background-color: #f0f0f0; /* Replace with your desired color */
+    padding: 20px;
+    height: 100vh; /* Full height */
+}
+
+.content {
+    float: left;
+    width: 75%;
+    padding: 20px;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.post {
+    margin-bottom: 20px;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0; /* Replace with your desired color */
+}
+
+footer a {
+    margin: 0 10px;
+}
+
+/* Add responsive design */
+@media (max-width: 600px) {
+    .sidebar, .content {
+        float: none;
+        width: auto;
+    }
+}
