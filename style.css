@@ -1,76 +1,84 @@
-body {
-    font-family: 'Arial', sans-serif;
+/* Reset some basic elements */
+body, h1, h2, p {
     margin: 0;
     padding: 0;
-    background: #fff;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
+/* Apply a font similar to the one observed on the example blog */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
 }
 
-.header {
-    text-align: left;
-    border-bottom: 2px solid #000;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+.wrapper {
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
 }
 
-.profile-pic {
-    float: left;
-    width: 150px;
-    height: 150px;
-    margin-right: 20px;
-    border-radius: 50%;
+.site-header {
+    margin-bottom: 40px;
 }
 
-.contact-info {
-    clear: both;
+.blog-title {
+    font-size: 36px;
+    margin-bottom: 5px;
 }
 
-.posts {
-    text-align: left;
+.blog-description {
+    font-size: 20px;
+    color: #777;
+}
+
+.content {
+    margin-bottom: 40px;
 }
 
 .post {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
-.post h3 {
-    margin: 0;
-    font-size: 1.2em;
+.post-title {
+    font-size: 28px;
+    margin-bottom: 10px;
 }
 
-.post p {
-    font-size: 0.9em;
+.post-title a {
+    text-decoration: none;
+    color: #333;
+}
+
+.post-excerpt {
     color: #555;
 }
 
 .pagination {
-    text-align: center;
-    padding: 20px 0;
+    font-size: 16px;
+    margin-top: 20px;
 }
 
-.pagination span {
-    margin: 0 5px;
-    padding: 5px 10px;
-    border: 1px solid #000;
-    cursor: pointer;
-}
-
-.footer {
-    text-align: center;
-    padding: 20px;
-    border-top: 2px solid #000;
-    position: absolute;
-    bottom: 0;
-    width: 80%;
-    background: #f0f0f0;
-}
-
-.footer a {
+.pagination a {
     text-decoration: none;
-    color: #000;
+    color: #333;
     margin: 0 10px;
+}
+
+.site-footer {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .wrapper {
+        width: auto;
+    }
+
+    .site-header, .content, .site-footer {
+        padding: 0 10px;
+    }
 }

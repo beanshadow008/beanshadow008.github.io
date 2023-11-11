@@ -3,43 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Blog Name</title>
+    <title>Joey's Blog</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <img src="no-face.png" alt="Profile Picture" class="profile-pic">
-            <h1>Blog Name</h1>
-            <p>Cognitive Science & Artificial Intelligence</p>
-            <div class="contact-info">
-                <p>Cambridge</p>
-                <a href="mailto:your-email@example.com">Email</a>
-                <a href="your-twitter-handle">Twitter</a>
-            </div>
-        </div>
-        <div class="posts">
-            <h2>Recent Posts</h2>
-            <!-- Repeat this section for each post -->
-            <div class="post">
-                <h3><a href="post-link.html">Post Title</a></h3>
-                <p>Post summary or introduction goes here...</p>
-            </div>
-            <!-- Pagination -->
-            <div class="pagination">
-                <span>Previous</span>
-                <span>1</span>
-                <span>2</span>
-                <!-- Add as many page numbers as needed -->
-                <span>3</span>
-                <span>Next</span>
-            </div>
-        </div>
-    </div>
-    <div class="footer">
-        <p>&copy; 2023 Your Name. All rights reserved.</p>
-        <a href="twitter-link">Twitter</a> |
-        <a href="rss-feed-link">Feed</a>
+    <div class="wrapper">
+        <header class="site-header">
+            <h1 class="blog-title">Joey's Blog</h1>
+            <p class="blog-description">A Blog About Interesting Things</p>
+        </header>
+        <main class="content">
+            <article class="post">
+                <h2 class="post-title"><a href="post-1.html">Sample Post Title</a></h2>
+                <p class="post-excerpt">A quick preview of the post content would go here, giving the reader an idea of what the post is about...</p>
+            </article>
+            <!-- Repeat the article block for each post -->
+            <nav class="pagination">
+                <a href="#" class="newer-posts">Newer Posts</a>
+                <a href="#" class="older-posts">Older Posts</a>
+            </nav>
+        </main>
+        <footer class="site-footer">
+            <p>&copy; 2023. By Joey.</p>
+        </footer>
     </div>
 </body>
 </html>
