@@ -16,20 +16,17 @@
   }
   
   body {
-    background-color: #121212;
-    color: #FFFFFF;
+    background-color: white;
     font: 13.34px helvetica, arial, clean, sans-serif;
     *font-size: small;
     text-align: center;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    color: #FFFFFF;
     font-size: 100%;
   }
   
   h1 {
-    color: #FFFFFF;
     margin-bottom: 1em;
   }
   
@@ -38,7 +35,6 @@
   }
   
   a {
-    color: #BB86FC;
     color: #00a;
   }
   
@@ -47,7 +43,6 @@
   }
   
   a:visited {
-    color: #BB86FC;
     color: #a0a;
   }
   
@@ -98,7 +93,6 @@
   }
   
     .site .title a {
-    color: #BB86FC;
       color: #a00;
       text-decoration: none;
     }
@@ -108,7 +102,6 @@
     }
   
     .site .title a.extra {
-    color: #BB86FC;
       color: #aaa;
       text-decoration: none;
       margin-left: 1em;
@@ -119,7 +112,6 @@
     }
   
     .site .meta {
-    color: #BB86FC;
       color: #aaa;
     }
   
@@ -137,7 +129,6 @@
       }
   
         .site .footer .contact a {
-    color: #BB86FC;
           color: #8085C1;
         }
   
@@ -219,7 +210,6 @@
   }
   
     #related h2 {
-    color: #FFFFFF;
       margin-bottom: 1em;
     }
   
